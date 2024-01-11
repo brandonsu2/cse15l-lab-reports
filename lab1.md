@@ -30,3 +30,34 @@ The working directory was `/home/lecture1`. When given a file as an argument, `c
 saying the input is not a directory. This makes sense as a file and directory are not the same so
 `cd` should fail. This is an error because the specified input is a file when `cd` only takes 
 directories as an argument.
+
+---
+## Command 2 (ls)
+**No Argument**
+```
+[user@sahara ~/lecture1]$ ls
+Hello.class  Hello.java  messages  README
+[user@sahara ~/lecture1]$ 
+```
+The working directory was `/home/lecture1`. When we do not input an argument, `ls` outputs
+all items in the working directory, which includes the files `Hello.class`, `Hello.java`, and 
+`README` along with the directory `messages`. This is not an error
+
+**Directory Argument**
+```
+[user@sahara ~/lecture1]$ ls messages
+en-us.txt  es-mx.txt  zh-cn.txt
+[user@sahara ~/lecture1]$
+```
+The working directory was `/home/lecture1`. When we input a directory argument, `ls` outputs
+all items within the specified directory, which is the intended output as `ls` is supposed to
+output all items that are in the directory. This is not an error 
+
+
+
+
+
+
+
+
+
