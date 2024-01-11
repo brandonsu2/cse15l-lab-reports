@@ -1,4 +1,4 @@
-#**Lab 1**
+# **Lab 1**
 ---
 ## Info
 *Hello this is a test of using a markdown file to create a portfolio*
