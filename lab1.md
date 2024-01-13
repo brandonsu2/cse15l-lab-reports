@@ -41,7 +41,7 @@ Hello.class  Hello.java  messages  README
 ```
 The working directory was `/home/lecture1`. When we do not input an argument, `ls` outputs
 all items in the working directory, which includes the files `Hello.class`, `Hello.java`, and 
-`README` along with the directory `messages`. This is not an error
+`README` along with the directory `messages`. This is not an error.
 
 **Directory Argument**
 ```
@@ -51,7 +51,22 @@ en-us.txt  es-mx.txt  zh-cn.txt
 ```
 The working directory was `/home/lecture1`. When we input a directory argument, `ls` outputs
 all items within the specified directory, which is the intended output as `ls` is supposed to
-output all items that are in the directory. This is not an error 
+output all items that are in the directory. This is not an error.
+
+**File Argument**
+```
+[user@sahara ~/lecture1]$ ls Hello.java
+Hello.java
+[user@sahara ~/lecture1]$
+```
+The working directory was `/home/lecture1`. When we pass a file into the argument of `ls`, 
+the command outputs the name of the file, which is expected as the only file at specified
+path is the file that was passed as an argument. This is not an error.
+
+---
+## Command 3 (cat)
+**No Argument**
+
 
 
 
