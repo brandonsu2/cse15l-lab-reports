@@ -66,7 +66,50 @@ path is the file that was passed as an argument. This is not an error.
 ---
 ## Command 3 (cat)
 **No Argument**
+```
+[user@sahara ~/lecture1]$ cat
+test
+test
+ 
+ 
+hi
+hi
+[user@sahara ~/lecture1]$
+```
+The working directory was `/home/lecture1`. When we do not pass an argument into `cat`, the
+the terminal begins accepting text into the standard input and reprints what was inputted
+by the user. It seems like when no argument is passed into `cat`, the command begins 
+concatenating what the user inputs to nothing, which is why it reprints the text recieved in
+the standard input. I do not think this is an error.
 
+**Directory Argument**
+```
+[user@sahara ~/lecture1]$ cat messages
+cat: messages: Is a directory
+[user@sahara ~/lecture1]$
+```
+The working directory was `/home/lecture1`. When provided with a directory argument, `cat`
+outputs the name of the directory and says it is a directory. This is an error as `cat` is
+used for reading and concatenating contents of a file, not of a directory.
+
+**File Argument**
+```
+[user@sahara ~/lecture1]$ cat Hello.java
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+
+public class Hello {
+  public static void main(String[] args) throws IOException {
+    String content = Files.readString(Path.of(args[0]), StandardCharsets.UTF_8);    
+    System.out.println(content);
+  }
+}[user@sahara ~/lecture1]$
+```
+The working directory was `/home/lecture1`. Whe provided with a file argument, `cat`
+outputs the contents of the file. In this case, I inputted `Hello.java` as an argument
+and the command printed the text contained in the file. This is not an error.
 
 
 
