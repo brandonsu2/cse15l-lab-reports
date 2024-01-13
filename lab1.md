@@ -8,7 +8,7 @@
 The working directory was the root directory `/home`. When we put in no argument, the `cd` command 
 does not change the current directory. This is not an error as the computer needs to know what
 directory to change to and if the user does not input a specified path, the computer should not
-change the directory.
+change the working directory.
 
 **Directory Argument**
 ```
@@ -29,7 +29,7 @@ bash: cd: Hello.java: Not a directory
 The working directory was `/home/lecture1`. When given a file as an argument, `cd` outputs an error
 saying the input is not a directory. This makes sense as a file and directory are not the same so
 `cd` should fail. This is an error because the specified input is a file when `cd` only takes 
-directories as an argument.
+a directory as an argument.
 
 ---
 ## Command 2 (ls)
@@ -89,7 +89,7 @@ cat: messages: Is a directory
 [user@sahara ~/lecture1]$
 ```
 The working directory was `/home/lecture1`. When provided with a directory argument, `cat`
-outputs the name of the directory and says it is a directory. This is an error as `cat` is
+outputs the name of the directory and specifies it as a directory. This is an error as `cat` is
 used for reading and concatenating contents of a file, not of a directory.
 
 **File Argument**
@@ -107,7 +107,7 @@ public class Hello {
   }
 }[user@sahara ~/lecture1]$
 ```
-The working directory was `/home/lecture1`. Whe provided with a file argument, `cat`
+The working directory was `/home/lecture1`. When provided with a file argument, `cat`
 outputs the contents of the file. In this case, I inputted `Hello.java` as an argument
 and the command printed the text contained in the file. This is not an error.
 
