@@ -1,4 +1,4 @@
-# Lab 1
+ # Lab 1
 ## Command 1 (cd)
 **No Argument**
 ```
@@ -6,9 +6,8 @@
 [user@sahara ~]$ 
 ```
 The working directory was the root directory `/home`. When we put in no argument, the `cd` command 
-does not change the current directory. This is not an error as the computer needs to know what
-directory to change to and if the user does not input a specified path, the computer should not
-change the working directory.
+returns back to the home directory. This is not an error as `cd` as a command's purpose is to change
+the working directory so a natural default operation would be returning to the home directory.
 
 **Directory Argument**
 ```
