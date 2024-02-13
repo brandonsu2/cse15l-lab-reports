@@ -57,8 +57,7 @@ class ChatServer {
 Method | Arguments | Values Updated
 | :--- | :--- | :---
 Main method | String[] args: Passes port as a string | int port: argument is converted into an int and assigned to port
-handleRequest method  | URI url: The url is passed through as a URI object| String[] messages: Within the handleRequest method, the URL is split to obtain the user and the message as seperate variables then concatenates them into single string.
-Then handleRequest finds the next empty index in the array and adds the new string with the concatentated message into the array then loops through the array and prints every string within the array which includes the preivous messages.
+handleRequest method  | URI url: The url is passed through as a URI object| String[] messages: Within the handleRequest method, the URL is split to obtain the user and the message as seperate variables then concatenates them into single string. Then handleRequest finds the next empty index in the array and adds the new string with the concatentated message into the array then loops through the array and prints every string within the array which includes the preivous messages.
 
 **Add message 2**
 ![Image](add_message2.png)
