@@ -56,6 +56,5 @@ class ChatServer {
 ![Image](add_message1.png)
 Method | Arguments | Values Updated
 | :--- | :--- | :---
-
 Main method | String[] args: Passes port as a string | int port: argument is converted into an int and assigned to port
 handleRequest method  | URI url: The url is passed through as a URI object| String[] messages: The handleRequest finds the next empty index in the array and adds the new message with the user and value
