@@ -52,3 +52,10 @@ class ChatServer {
     }
 }
 ```
+**Add Message 1**
+![Image](add_message1.png)
+Method | Arguments | Values Updated
+| :--- | :--- | :---
+Czxcvzxcvzxcvzxcvzxcvzxcv
+cxvbxcvbxcvbxcvbxcvbxcvbxcvbxcvb| Content Cell | Content Cell
+Content Cell  | Content Cell | Content Cell
