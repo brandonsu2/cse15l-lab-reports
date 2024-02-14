@@ -117,29 +117,31 @@ The option `-n` is used to search for a keyword within a specific file and retur
 
 **`-l` Finding Files**
 ---
+
 ChatGPT prompt: 
-"-l option grep"
+>"-l option grep"
+
 Output: 
-The -l option in grep is used to suppress normal output and instead print the names of files that contain matches. This is particularly useful when you want to know which files contain a certain pattern without seeing the actual matching lines. Here's how you can use it:
-
-bash
-Copy code
-grep -l "pattern" file1.txt file2.txt file3.txt
-This command will search for the pattern in file1.txt, file2.txt, and file3.txt, and it will only output the names of the files that contain the pattern.
-
-You can also use it with other commands to search within a directory:
-
-bash
-Copy code
-grep -l "pattern" /path/to/directory/*
-This command will search for the pattern in all files within the /path/to/directory directory and its subdirectories, and it will only output the names of the files that contain the pattern.
-
-For example, if you want to find all files containing the word "error" in the current directory and its subdirectories, you can use:
-
-bash
-Copy code
-grep -l "error" ./*
-This command will list all files in the current directory and its subdirectories that contain the word "error".
+>The -l option in grep is used to suppress normal output and instead print the names of files that contain matches. This is particularly useful when >you want to know which files contain a certain pattern without seeing the actual matching lines. Here's how you can use it:
+>
+>bash
+>Copy code
+>grep -l "pattern" file1.txt file2.txt file3.txt
+>This command will search for the pattern in file1.txt, file2.txt, and file3.txt, and it will only output the names of the files that contain the >pattern.
+>
+>You can also use it with other commands to search within a directory:
+>
+>bash
+>Copy code
+>grep -l "pattern" /path/to/directory/*
+>This command will search for the pattern in all files within the /path/to/directory directory and its subdirectories, and it will only output the >names of the files that contain the pattern.
+>
+>For example, if you want to find all files containing the word "error" in the current directory and its subdirectories, you can use:
+>
+>bash
+>Copy code
+>grep -l "error" ./*
+>This command will list all files in the current directory and its subdirectories that contain the word "error".
 
 **Example 1**
 ```
@@ -156,29 +158,31 @@ The option `-l` is used to search for files with the specified keyword and retur
 
 **'-i' Case-Insensitive Search**
 ---
+
 ChatGPT prompt: 
-"grep -i example"
+>"grep -i example"
+
 Output:
-The grep -i command is used to perform a case-insensitive search for the specified pattern. It will match lines containing the pattern regardless of case. Here's how you can use it:
-
-bash
-Copy code
-grep -i "example"
-This command will read from standard input and print all lines that contain the pattern "example", ignoring case. For example, it will match lines containing "example", "Example", "EXAMPLE", etc.
-
-You can also specify a file to search within:
-
-bash
-Copy code
-grep -i "example" file.txt
-This command will search within file.txt and print all lines that contain the pattern "example", ignoring case.
-
-If you want to search within a directory and its subdirectories:
-
-bash
-Copy code
-grep -ri "example" /path/to/directory
-This command recursively searches within /path/to/directory and its subdirectories, printing all lines that contain the pattern "example", ignoring case.
+>The grep -i command is used to perform a case-insensitive search for the specified pattern. It will match lines containing the pattern regardless of >case. Here's how you can use it:
+>
+>bash
+>Copy code
+>grep -i "example"
+>This command will read from standard input and print all lines that contain the pattern "example", ignoring case. For example, it will match lines >containing "example", "Example", "EXAMPLE", etc.
+>
+>You can also specify a file to search within:
+>
+>bash
+>Copy code
+>grep -i "example" file.txt
+>This command will search within file.txt and print all lines that contain the pattern "example", ignoring case.
+>
+>If you want to search within a directory and its subdirectories:
+>
+>bash
+>Copy code
+>grep -ri "example" /path/to/directory
+>This command recursively searches within /path/to/directory and its subdirectories, printing all lines that contain the pattern "example", ignoring >case.
 
 **Example 1**
 ```
@@ -195,29 +199,31 @@ The option `-i` is used on files for a case-insensitive search for a specified k
 
 **`-v` Invert Matches**
 ---
+
 ChatGPT prompt: 
-"grep -v"
+>"grep -v"
+
 Output:
-The grep -v command is used to invert the matching, meaning it selects only lines that do not match the specified pattern. Here's how you can use it:
-
-bash
-Copy code
-grep -v "pattern"
-This command will read from standard input and print all lines that do not contain the specified pattern.
-
-You can also specify a file to search within:
-
-bash
-Copy code
-grep -v "pattern" file.txt
-This command will search within file.txt and print all lines that do not contain the specified pattern.
-
-If you want to search within a directory and its subdirectories:
-
-bash
-Copy code
-grep -rv "pattern" /path/to/directory
-This command recursively searches within /path/to/directory and its subdirectories, printing all lines that do not contain the specified pattern.
+>The grep -v command is used to invert the matching, meaning it selects only lines that do not match the specified pattern. Here's how you can use it:
+>
+>bash
+>Copy code
+>grep -v "pattern"
+>This command will read from standard input and print all lines that do not contain the specified pattern.
+>
+>You can also specify a file to search within:
+>
+>bash
+>Copy code
+>grep -v "pattern" file.txt
+>This command will search within file.txt and print all lines that do not contain the specified pattern.
+>
+>If you want to search within a directory and its subdirectories:
+>
+>bash
+>Copy code
+>grep -rv "pattern" /path/to/directory
+>This command recursively searches within /path/to/directory and its subdirectories, printing all lines that do not contain the specified pattern.
 
 **Example 1**
 ```
