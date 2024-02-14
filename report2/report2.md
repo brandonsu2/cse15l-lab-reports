@@ -69,9 +69,11 @@ handleRequest method  | URI url: The url is passed through as a URI object| Stri
 ## Part 2
 **Private Key**
 Absolute path: `/home/linux/ieng6/oce/59/brsu/.ssh/authorized_keys`
-
+![Image](private_key.png)
 
 **Public Key**
 Absolute path: `/Users/brandonsu/.ssh/id_rsa.pub`
+![Image](public_key.png)
 
 **Login without password**
+![Image](loginnopass.png)
