@@ -77,3 +77,6 @@ Absolute path: `/Users/brandonsu/.ssh/id_rsa.pub`
 
 **Login without password**
 ![Image](loginnopass.png)
+
+## Part 3
+I learned a lot about new commands and functionalities of commands I already knew along with learning about local hosting. I did not know you could pass arguments into a program using the local host URL which also actively updates values in the backend and displays immediately after. I learned about the `scp` command, which is secure copy which can be used to copy files between hosts. I learned about new functionalities of `mkdir`, which can take in options as an argument, such as `-m` using which can set the newly created directory with specific read/write permissions.
