@@ -13,8 +13,8 @@ public void testReversed1() {
 ```
 @Test
 public void testReversed2() {
-    int[] integers = new int[]{1};
-    int[] expectedArr = new int[]{1};
+    int[] integers = new int[]{0};
+    int[] expectedArr = new int[]{0};
     assertArrayEquals(expectedArr, reversed(integers));
 }
 ```
