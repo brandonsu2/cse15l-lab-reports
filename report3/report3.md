@@ -48,31 +48,31 @@ The problem with the code before the change was the for loop was assigning value
 ---
 
 ChatGPT prompt: 
-"example of -n for grep"
+>"example of -n for grep"
 
 Output: 
-The -n option in grep is used to prefix each line of output with the line number within its input file. Here's an example of how you can use it:
-
-Let's say you have a text file named example.txt with the following contents:
-
-kotlin
-Copy code
-This is the first line
-This is the second line
-And this is the third line
-Now, if you want to search for the word "line" in this file and display the line numbers along with the matching lines, you can use grep with the -n option like this:
-
-perl
-Copy code
-grep -n "line" example.txt
-The output will be:
-
-kotlin
-Copy code
-1:This is the first line
-2:This is the second line
-3:And this is the third line
-As you can see, each line of output is prefixed with the line number within the file where the match occurred. This is particularly useful when dealing with large files or when you need to reference specific line numbers containing matches.
+>The -n option in grep is used to prefix each line of output with the line number within its input file. Here's an example of how you can use it:
+>
+>Let's say you have a text file named example.txt with the following contents:
+>
+>kotlin
+>Copy code
+>This is the first line
+>This is the second line
+>And this is the third line
+>Now, if you want to search for the word "line" in this file and display the line numbers along with the matching lines, you can use grep with the -n >option like this:
+>
+>perl
+>Copy code
+>grep -n "line" example.txt
+>The output will be:
+>
+>kotlin
+>Copy code
+>1:This is the first line
+>2:This is the second line
+>3:And this is the third line
+>As you can see, each line of output is prefixed with the line number within the file where the match occurred. This is particularly useful when >dealing with large files or when you need to reference specific line numbers containing matches.
 
 **Example 1**
 ```
