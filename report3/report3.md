@@ -44,9 +44,10 @@ After
 The problem with the code before the change was the for loop was assigning values form the argument array with the values from the newly created array and returning the argument array. In order to fix this, we switch the assignment in the for loop so the newArray array is recieving values from the argument array and change the return statement so newArray is returned.
 
 ## Part 2
-**Command `grep`**
 **`-n` Line Number**
-ChatGPT prompt: "example of -n for grep"
+---
+ChatGPT prompt: 
+"example of -n for grep"
 Output: 
 The -n option in grep is used to prefix each line of output with the line number within its input file. Here's an example of how you can use it:
 
@@ -111,9 +112,11 @@ Brandon-6:biomed brandonsu$ grep -n "similar" 1471-230X-2-21.txt
 232:        lymphocytic infiltration similar to that found in stage I
 ```
 The option `-n` is used to search for a keyword within a specific file and returns the line along with the line number that contains the specified keyword. The command follows the format of `grep -n (keyword) (file to search)`. This is useful for finding the frequency of the specified keyword and can also be used to find the location of a word, like how we search for keyword "similar" in example 2 and `grep -n` returned the specific line numbers which contained out word.
----
+
 **`-l` Finding Files**
-ChatGPT prompt: -l option grep
+---
+ChatGPT prompt: 
+"-l option grep"
 Output: 
 The -l option in grep is used to suppress normal output and instead print the names of files that contain matches. This is particularly useful when you want to know which files contain a certain pattern without seeing the actual matching lines. Here's how you can use it:
 
@@ -148,9 +151,11 @@ Brandon-6:biomed brandonsu$ grep -l "subspecies" ./*
 ./1471-2180-3-10.txt
 ```
 The option `-l` is used to search for files with the specified keyword and returns a list of the files that contain the keyword. The command follows the format of `grep -l (keyword) (directory to search)`. This is useful for finding files that contain specific keywords that we want to prompt for. For example, in example 1, we look for the keyword "Darwin" and `grep -l` returns the only file that contains "Darwin" in the working directory.
----
+
 **'-i' Case-Insensitive Search**
-ChatGPT prompt: grep -i example
+---
+ChatGPT prompt: 
+"grep -i example"
 Output:
 The grep -i command is used to perform a case-insensitive search for the specified pattern. It will match lines containing the pattern regardless of case. Here's how you can use it:
 
@@ -185,9 +190,11 @@ Brandon-6:biomed brandonsu$ grep -i "subspecies" 1471-2180-2-2.txt
         Mycobacterium avium subspecies 
 ```
 The option `-i` is used on files for a case-insensitive search for a specified keyword. The command follows the format of `grep -i (keyword) (file to search)`. This option is useful for searching for looking for words which are not proper nouns. For example, searching for "the" within a file would be inconvenient to search for with a case-sensitive search as "the" is commonly used as the first word of a sentence and can be capitalized.
----
+
 **`-v` Invert Matches**
-ChatGPT prompt: grep -v
+---
+ChatGPT prompt: 
+"grep -v"
 Output:
 The grep -v command is used to invert the matching, meaning it selects only lines that do not match the specified pattern. Here's how you can use it:
 
