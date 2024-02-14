@@ -46,8 +46,10 @@ The problem with the code before the change was the for loop was assigning value
 ## Part 2
 **`-n` Line Number**
 ---
+
 ChatGPT prompt: 
 "example of -n for grep"
+
 Output: 
 The -n option in grep is used to prefix each line of output with the line number within its input file. Here's an example of how you can use it:
 
