@@ -3,7 +3,7 @@
 Keys pressed: `<up><enter>`. Because I logged in very recently to the server, I only had to press the two keys to log into the server.
 ![q4](q4.png)
 ## Step 5
-Keys pressed: `git clone git@github.com:brandonsu2/lab7.git`. In order clone the forked repo, I used git clone to clone a repo and used the ssh url git@github.com:brandonsu2/lab7.git which I am able to use because I connected a ssh key between the ieng6 computer and my GitHub account. 
+Keys pressed: `git clone git@github.com:brandonsu2/lab7.git`. In order clone the forked repo, I used git clone to clone a repo and used the ssh url "git@github.com:brandonsu2/lab7.git" which I am able to use because I connected a ssh key between the ieng6 computer and my GitHub account. 
 ![q5](q5.png)
 ## Step 6
 Keys pressed: `(cd lab7)(bash test.sh)`. In order to compile and run the `ListExamplesTests.java` file, I had to first change my working directory to direction `lab7` using the `cd` command. Once my working directory was updated, I typed in "bash test.sh" in order to compile and run test file resulting in 2 tests running and 1 test failing.
