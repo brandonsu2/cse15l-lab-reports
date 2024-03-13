@@ -25,7 +25,7 @@ I looked back at my implementation of averageWithoutLowest and traced through th
 Fixed method:
 ![fixedmethod](fixedmethod.png)
 Test cases passed:
-![fixedsymptom](fixed_symptom.png)
+![fixedsymptom](fixedsymptom.png)
 
 ---
 **Setup**
