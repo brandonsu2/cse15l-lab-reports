@@ -31,3 +31,5 @@ Test cases passed:
 
 In order for the file setup to work, we need 3 files within the same working directory, `ArrayExamples.java`, `ArrayTests.java`, and `test.sh`. For the contents of each file, `ArrayExamples.java` needs to have the default implementation of `averageWithoutLowest` which is retrieved from lab 4 repository of cse15l, with the inclusion of a counter variable `numLowest` which is the student's attempt at fixing the buggy method and removing the lowest number from the average calculation. For contents of `ArrayTests.java`, we need a test case which passes an array with multiple matches to the lowest value in the array as the student's initial implementation does not work when there are differing number of nonmatches and matches to the lowest element. For the contents of the bash script `test.sh`, we need the commands
 
+javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
+java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ArrayTests
