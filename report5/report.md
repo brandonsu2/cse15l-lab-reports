@@ -11,3 +11,11 @@ My averageWithoutLowest method:
 ![method](method.png)
 My testing bash script in case I am running the wrong commands:
 ![bash](bash.png)
+
+---
+**The TA Response**
+Good job in trying eliminate multiple elements that share the value of lowest, but are we counting the number of elements correctly? Try tracing through the iterations when adding to the sum variable and make sure we are incrementing correctly. 
+
+---
+**The Bug Fix**
+I looked back at my implementation of averageWithoutLowest and traced through the iterati
