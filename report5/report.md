@@ -29,6 +29,7 @@ Fixed method:
 ![fixedmethod](fixedmethod.png)
 
 Test cases passed:
+
 ![fixedsymptom](fixedsymptom.png)
 
 ---
