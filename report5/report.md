@@ -21,6 +21,7 @@ Good job in trying to eliminate multiple elements that share the value of lowest
 **The Bug Fix**
 
 I looked back at my implementation of averageWithoutLowest and traced through the iterations. We loop through array values {1, 1, 5, 6, 7}. Then I noticed that my incrementation of numLowest only increments when we are adding to the sum, which is incorrect as we should be incrementing when we are not adding to sum i.e. when num == lowest. So I created an else statment to my if statment num != lowest, meaning if num does not satisfiy num != lowest, then num == lowest and we should increment numLowest. Once I fixed where my code was incrementing and ran my bash script, which compiled and ran my test cases, all my tests passed.
+
 Fixed method:
 ![fixedmethod](fixedmethod.png)
 Test cases passed:
